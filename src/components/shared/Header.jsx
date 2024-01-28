@@ -7,7 +7,7 @@ const Header = () => {
 
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [navMobile, setNavMobile] = useState('block')
-    const [isCartOpen, setIsCartOpen] = useState(false)
+    const [isCartOpen, setIsCartOpen] = useState(false);
 
 
 
