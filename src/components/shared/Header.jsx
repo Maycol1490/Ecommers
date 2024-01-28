@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../pages/styles/Header.css'
 import Cart from '../../pages/Cart';
