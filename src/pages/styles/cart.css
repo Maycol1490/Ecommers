@@ -13,9 +13,23 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     gap: 1em;
+}
+.btn-cart-modal{
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 20px;
+    align-items: flex-start;
+    color: var(--color1);
+    background-color: var(--color2);
+}
+.btn-cart-modal:hover{
+    color: var(--color2);
+    background-color: var(--color1);
+    border: solid var(--color2);
 }
 .cart-card{
     width: 100%;

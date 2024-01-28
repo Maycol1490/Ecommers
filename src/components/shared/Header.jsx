@@ -21,14 +21,15 @@ const Header = () => {
         } else {
             setNavMobile('block')
         }
-        if (isCartOpen) {
-            setIsCartOpen(false);
-        }
     };
 
     const toggleOpenCart = () => {
-        setIsCartOpen(!isCartOpen),
+        setIsCartOpen(!isCartOpen)
+        if(!isCartOpen){
         setNavMobile('none')
+        }else{
+            setNavMobile('block')
+        }
     }
 
     return (
@@ -60,7 +61,7 @@ const Header = () => {
                 </button>
             </div>
             <div className='header_modal_cart'>
-                <Cart isCartOpen={isCartOpen} onCartClose={toggleOpenCart} />
+                <Cart isCartOpen={isCartOpen} onCartClose={toggleOpenCart} toggleOpenCart={toggleOpenCart} />
             </div>
         </header>
     )

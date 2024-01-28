@@ -31,6 +31,7 @@ const Cart = ({isCartOpen,toggleOpenCart}) => {
   return (
     <div className='cart' style={modalStyle}>
       <div className='cart-container'>
+        <button onClick={toggleOpenCart} className='btn-cart-modal'>x</button>
         {
           cartGlobal?.map(prodCart => (
             <ProductCart
