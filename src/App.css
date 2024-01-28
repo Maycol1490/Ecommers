@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,ul,li{
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --color1: #05BFDB;
+    --color2: #99A98F;
+    --color3: #182747;
+    --color4: #34374C;
+}
+
+
+.app{
+    width: 100%;
+    height: 100vh;
+}
+
