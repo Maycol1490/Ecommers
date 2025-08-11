@@ -1,0 +1,114 @@
+.product-details {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.zoom-container {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.zoom-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.zoom-container:hover .zoom-image {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.quantity-controls button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #999;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.quantity-controls button:hover {
+  background-color: #ddd;
+}
+
+.add-cart {
+  padding: 0.7rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.add-cart:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 3rem;
+}
+
+.similar-products {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.similar-products h3 {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.similar-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.similar-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.7rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.similar-card:hover {
+  transform: scale(1.05);
+}
+
+.similar-card img {
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
