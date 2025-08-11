@@ -36,7 +36,7 @@ const Profile = () => {
     })
       .then(res => res.json())
       .then(data => {
-        alert('Perfil actualizado');
+        alert('Updated profile');
         setUser(data);
       })
       .catch(err => console.error(err));
