@@ -12,7 +12,7 @@ const Cart = () => {
 
   const handleCheckout = () => {
     if (!userId) {
-      alert("You must log in to purchase.")
+      alert("You must log in to purchase. Use this username: mor_2314 and this password: 83r5^_")
       window.location.href = "/login"
       return
     }
